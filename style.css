@@ -2,6 +2,27 @@
 
 :root {
   font-size: 62.5%;
+
+  --card-primary-color: hsl(51, 92%, 62%);
+  --card-title-border-color: hsl(51, 69%, 27%);
+  --card-bg-color: #1D1C19;
+  --bg: url(./assets/bg-yellow.svg);
+
+  --text-color-default: #E1E1E6;
+}
+
+body.blue {
+    --card-primary-color: #338AF3;
+    --card-title-border-color: #2d76cf;
+    --card-bg-color: #202024;
+    --bg: url(./assets/bg-blue.svg);
+}
+
+body.green {
+    --card-primary-color: #047C3F;
+    --card-title-border-color: #026d37;
+    --card-bg-color: #1A1F1B;
+    --bg: url(./assets/bg-green.svg);
 }
 
 * {
@@ -15,15 +36,17 @@ html {
 }
 
 body {
-  color: hsl(0, 0%, 100%);
+  color: #ffffff;
+  height: 100vh;
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
   background-color: #121214;
-  background-image: url(./assets/bg.svg);
-  background-position-x:  center;
-  background-position-y: -715px;
+  background-image: var(--bg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body * {
@@ -36,7 +59,8 @@ ul {
 
 #app {
   width: fit-content;
-  margin: 5.2rem auto;
+  margin: auto;
+  padding-top: 5.2rem;
 }
 
 header {
@@ -45,7 +69,7 @@ header {
 }
 
 h1#calendar {
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(217, 217, 217, 0.8) 100%);
 
@@ -71,6 +95,14 @@ h1#calendar {
 
 main {
   color: transparent;
+  margin-bottom: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
 }
 
 .card {
@@ -83,8 +115,8 @@ main {
 
   min-width: min(31rem, 96vw);
 
-  background: #1D1C19;
-  border-bottom: 2px solid #F7DD43;
+  background: var(--card-bg-color);
+  border-bottom: 2px solid var(--card-primary-color);
   border-radius: .6rem;
 }
 
@@ -105,7 +137,7 @@ main {
 }
 
 .card h2 {
-  border: 1px solid #746615;
+  border: 1px solid var(--card-title-border-color);
   border-radius: .6rem;
   padding: .8rem 1.6rem;
 
@@ -126,10 +158,51 @@ main {
   letter-spacing: .15rem;
   text-transform: uppercase;
 
-  color: #E1E1E6;
+  color: var(--text-color-default);
 }
 
-.card strong {
+.card ul li strong {
   font-size: 3.6rem;
-  color: #E1E1E6;
+  color: var(--text-color-default);
+}
+
+.card h2,
+.card ul li strong,
+.card ul li img {
+  transition: transform 300ms;
+}
+
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover {
+  transform: scale(1.1);
+}
+
+.card ul li img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.card {
+  opacity: 0;
+  animation: appear 600ms forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem) ;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 700px) {
+  #cards {
+    max-width: 67rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

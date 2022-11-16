@@ -1,0 +1,134 @@
+{
+  "match-days": [
+    {
+      "date": "20/11/2022",
+      "matches": [
+        {
+          "player1": "CAT",
+          "player2": "EQU",
+          "time": "13:00"
+        }
+      ]
+    },
+    {
+      "date": "21/11/2022",
+      "matches": [
+        {
+          "player1": "ING",
+          "player2": "IRN",
+          "time": "10:00"
+        },
+        {
+          "player1": "SEN",
+          "player2": "HOL",
+          "time": "13:00"
+        },
+        {
+          "player1": "USA",
+          "player2": "WAL",
+          "time": "16:00"
+        }
+      ]
+    },
+    {
+      "date": "22/11/2022",
+      "matches": [
+        {
+          "player1": "ARG",
+          "player2": "ARA",
+          "time": "07:00"
+        },
+        {
+          "player1": "TUN",
+          "player2": "DIN",
+          "time": "10:00"
+        },
+        {
+          "player1": "MEX",
+          "player2": "POL",
+          "time": "13:00"
+        },
+        {
+          "player1": "FRA",
+          "player2": "AUS",
+          "time": "16:00"
+        }
+      ]
+    },
+    {
+      "date": "23/11/2022",
+      "matches": [
+        {
+          "player1": "MAR",
+          "player2": "CRO",
+          "time": "07:00"
+        },
+        {
+          "player1": "ALE",
+          "player2": "JAP",
+          "time": "10:00"
+        },
+        {
+          "player1": "ESP",
+          "player2": "CRC",
+          "time": "13:00"
+        },
+        {
+          "player1": "BEL",
+          "player2": "CAN",
+          "time": "16:00"
+        }
+      ]
+    },
+    {
+      "date": "24/11/2022",
+      "matches": [
+        {
+          "player1": "SUI",
+          "player2": "CMR",
+          "time": "07:00"
+        },
+        {
+          "player1": "URU",
+          "player2": "COR",
+          "time": "10:00"
+        },
+        {
+          "player1": "POR",
+          "player2": "GAN",
+          "time": "13:00"
+        },
+        {
+          "player1": "BRA",
+          "player2": "SER",
+          "time": "16:00"
+        }
+      ]
+    },
+    {
+      "date": "25/11/2022",
+      "matches": [
+        {
+          "player1": "WAL",
+          "player2": "IRN",
+          "time": "07:00"
+        },
+        {
+          "player1": "CAT",
+          "player2": "SEN",
+          "time": "10:00"
+        },
+        {
+          "player1": "HOL",
+          "player2": "EQU",
+          "time": "13:00"
+        },
+        {
+          "player1": "ING",
+          "player2": "USA",
+          "time": "16:00"
+        }
+      ]
+    }
+  ]
+}
