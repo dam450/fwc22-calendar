@@ -1,0 +1,12 @@
+{
+  "name": "nlw-copa-explorer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "server": "npx lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

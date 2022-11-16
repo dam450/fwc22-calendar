@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1.6rem;
+}
+
+body {
+  color: hsl(0, 0%, 100%);
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  background-color: #121214;
+  background-image: url(./assets/bg.svg);
+  background-position-x:  center;
+  background-position-y: -715px;
+}
+
+body * {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+#app {
+  width: fit-content;
+  margin: 5.2rem auto;
+}
+
+header {
+  margin-bottom: 6.3rem;
+  text-align: center;
+}
+
+h1#calendar {
+  color: #000;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(217, 217, 217, 0.8) 100%);
+
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 125%;
+}
+
+@supports (text-fill-color: transparent) {
+  h1#calendar {
+    text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@supports (-webkit-text-fill-color: transparent) {
+  h1#calendar {
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+main {
+  color: transparent;
+}
+
+.card {
+  padding: 3.2rem 2.3rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.3rem;
+
+  min-width: min(31rem, 96vw);
+
+  background: #1D1C19;
+  border-bottom: 2px solid #F7DD43;
+  border-radius: .6rem;
+}
+
+.card ul {
+  width: 100%;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card ul li + li {
+  border-top: 1px solid #323238;
+  margin-top: 2.4rem;
+  padding-top: 2.4rem;
+}
+
+.card h2 {
+  border: 1px solid #746615;
+  border-radius: .6rem;
+  padding: .8rem 1.6rem;
+
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+
+  color: #F7DD43;
+  font-size: 2.4rem;
+  line-height: 125%;
+}
+
+.card h2 span {
+  font-size: 1.4rem;
+  line-height: 125%;
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+
+  color: #E1E1E6;
+}
+
+.card strong {
+  font-size: 3.6rem;
+  color: #E1E1E6;
+}
