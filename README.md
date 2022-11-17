@@ -19,6 +19,7 @@ através de _FETCH_ do javascript, tratando a data para apresentar o dia da sema
 ## 🎞️ Layout
 
 Clique na imagem abaixo para abrir o projeto figma.
+
 [![figma-preview]](https://www.figma.com/file/3slC5fbKSm9yClArpPu6QE/Calend%C3%A1rio-de-Jogos-(Community)?node-id=0%3A1&viewer=1)
 
 ## 🧰 Tecnologias
