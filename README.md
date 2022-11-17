@@ -5,14 +5,14 @@
 [Descrição](#-descrição)&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
 [Layout](#%EF%B8%8F-layout)&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
 [Tecnologias](#-tecnologias)&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
+[Dados](#-dados)&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
 [Licença](#-licença) &nbsp;&nbsp;&nbsp;
 
 ## 📌 Descrição
 
 Calendário de jogos da Copa do Mundo 2022 desenvolvido durante a **NLW#10** Copa @Rocketseat. 
 Como complemento adicionei a **troca de temas** que pode ser acionada ao clicar no logo e também simulei 
-o consumo de uma **_API_** carregando os dados dos jogos que estão em um arquivo _JSON_ na pasta _DATA_ 
-através de _FETCH_ do javascript, tratando a data para apresentar o dia da semana.
+o consumo de uma **_API_** buscando os dados dos jogos que estão em um arquivo _JSON_ no Github Gist [(**gamelist.json**)](https://gist.github.com/dam450/605794d4a4ed5ec64bbc6c24c03dea74) carregando através do _FETCH_ do javascript, tratando a data para apresentar o dia da semana.
 
 [Veja o projeto online aqui.](https://dam450.github.io/fwc22-calendar/)
 
@@ -26,6 +26,13 @@ Clique na imagem abaixo para abrir o projeto figma.
 Linguagens e ferramentas utilizadas:
 
 [![HTML-Badge][html5] ![CSS-Badge][css3] ![JS-Badge][js]](#-tecnologias)
+
+
+## 🎲 Dados
+
+As informações dos jogos são carregadas do arquivo _gamelist.json_ armazenado neste
+[Github Gist](https://gist.github.com/dam450/605794d4a4ed5ec64bbc6c24c03dea74).
+
 
 ## 📄 Licença
 

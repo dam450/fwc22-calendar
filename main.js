@@ -45,7 +45,9 @@ function createCard(date) {
 async function getGameData() {
   let gameData
   try {
-    const response = await fetch('./data/gamelist.json')
+    const response = await fetch(
+      'https://gist.githubusercontent.com/dam450/605794d4a4ed5ec64bbc6c24c03dea74/raw/0e636ff24967ae529afcc7b1f35fa533811f0541/gamelist.json'
+    )
     const data = await response.json()
     gameData = data['match-days']
     return gameData 
