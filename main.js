@@ -69,3 +69,21 @@ getGameData().then(data => {
     document.querySelector('#cards').appendChild(card)
   })
 })
+
+function changeTheme() {
+  const app = document.querySelector('body')
+
+  const yellow = app.classList.contains('yellow')
+  const blue = app.classList.contains('blue')
+  const green = app.classList.contains('green') 
+
+  if (yellow) {
+    app.classList.replace('yellow', 'blue')
+  }else if (blue) {
+    app.classList.replace('blue', 'green')
+  } else {
+    app.classList.replace('green', 'yellow')
+  }
+}
+
+document.querySelector('#app header').addEventListener('click', changeTheme)
